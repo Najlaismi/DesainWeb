@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Lucida Bright;
+}
+.container {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background: #E1FFBB;
+}
+.navbar {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	background: burlywood;
+}
+.logo img {
+	width: 90px;
+	cursor: pointer;
+	margin: 35px 0;
+}
+.wrapper {
+	width: 500px;
+	margin: auto;
+	position: relative;
+}
+.logo {
+	font-size: 35px;
+	font-weight: 500;
+	float: left;
+	font-family: courier;
+}
+.navbar nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.navbar nav ul li {
+	position: relative; 
+	margin-right: 30px;
+}
+
+.navbar nav ul li a {
+	text-decoration: none;
+	color: #626F47;
+	font-size: 12px;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.navbar nav ul li:hover > a {
+	color: #FFCFCF;
+	border-bottom: 2px solid #626F47;
+}
+
+.navbar nav ul li .drop-down {
+	display: none; 
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+	background: burlywood;
+	padding: 10px 0;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	min-width: 150px; 
+}
+
+.navbar nav ul li:hover .drop-down {
+	display: block; 
+}
+
+.navbar nav ul li .drop-down li {
+	padding: 10px 20px;
+	text-align: left;
+}
+
+.navbar nav ul li .drop-down li a {
+	text-decoration: none;
+	color: #626F47;
+	display: block;
+}
+
+.navbar nav ul li .drop-down li:hover {
+	background: #FFCFCF;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col h1{
+  margin-top: 180px;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 200px;
+}
+.col a{
+  float: left;
+  padding: 18px 50px;
+  border-radius: 30px;
+  background: burlywood;
+  display: inline-block;
+  color: #000;
+  font-weight: 400;
+  margin-top: 70px;
+  margin-left: 350px;
+ }
+.float-right {
+	position: absolute;
+	margin-right: 100px;
+	width: 470px;
+	height: auto;
+	right: 0;
+	top: 230px;
+}
